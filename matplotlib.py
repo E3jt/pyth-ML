@@ -11,9 +11,9 @@ def hit1():
 
     
 def hit2():
-    x = numpy.random.uniform(0.0, 10.0, 10000)
+    x = numpy.random.uniform(0.0, 16.0, 160)
 
-    plt.hist(x, 10)
+    plt.hist(x, 16)
     plt.show()
     
 
