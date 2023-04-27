@@ -9,11 +9,11 @@ allKeys = all.keys()
 df = pd.DataFrame(all)
 print(df)
 
-X = df[['Ship Date', 'Total Profit']]
-y = df['Total profit']
+X = df[['Units Sold', 'Total Profit']]
+y = df['Total Cost']
 
 regr = linear_model.LinearRegression()
-regr.fit(x.values, y)
-predictedogolem = regr.predict([[3/27/2013, 841183.06]])
+regr.fit(X.values, y)
+predictedogolem = regr.predict([[5123, 841183.06]])
 
 print(predictedogolem)
